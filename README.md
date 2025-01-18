@@ -1,102 +1,151 @@
 <div align="center">
 
-**v2.5 is releasing soon! [Pre-release version is already out for Linux users](https://github.com/upscayl/upscayl/releases/v2.5.0)**
-
-[![Github All Releases](https://img.shields.io/github/downloads/upscayl/upscayl/total.svg?style=for-the-badge&logo=data:image/png;base64,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&labelColor=fff000&color=82E0AA)]()
-
+  # v2.15 is out! 🥳 [Download Now ⬇️](https://github.com/upscayl/upscayl/releases/latest)
 
 <a href="https://github.com/upscayl/upscayl/releases/latest">
-<img src="https://user-images.githubusercontent.com/25067102/230708394-75e2d0a6-ed69-45be-ac91-8b8770d1709e.png" width="200px" />
+  
+  ![Frame 111](https://github.com/upscayl/upscayl/assets/25067102/d1b4af3c-aade-4bc9-97d0-cf88db679931)
+</a>
+
+<a href="https://upscayl.org/#download">
+  <img src="https://img.shields.io/github/downloads/upscayl/upscayl/total.svg?style=for-the-badge&logo=data:image/png;base64,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&labelColor=ede9fe&color=8e6bf6" width="200px" style="border-radius:50%"/>
+</a>
+
+  </br>
+  </br>
+
+<!--<a href="https://github.com/upscayl/upscayl/releases/latest">
+  <img src="https://github.com/upscayl/upscayl/assets/25067102/6287fd40-2c91-4028-b1d6-3986e77d8211" width="200px" />
+</a>-->
 
 <a href="https://t.me/iamnayam">
-<img src="https://user-images.githubusercontent.com/25067102/209297095-a3db856f-b760-40bb-a68e-f3a3086e18c7.png" width="200px" />   
+  <img src="https://user-images.githubusercontent.com/25067102/209297095-a3db856f-b760-40bb-a68e-f3a3086e18c7.png" width="200px" />   
 </a>      
 
-<a href="https://t.me/LinuxChats">
-<img src="https://user-images.githubusercontent.com/25067102/215301815-b9922b27-4e65-435a-aa9d-239da0ac61b4.png" width="200px" />
+<a href="https://x.com/upscayl">
+  <img src="https://github.com/upscayl/upscayl/assets/25067102/917dcf6f-452b-43e6-95cd-2c6b0a47913d" width="200px" />
 </a>
 
-</a>
-
-# [Upscayl 🆙](https://upscayl.github.io)
+# 🆙 Upscayl
 
 #### Free and Open Source AI Image Upscaler
+Upscayl lets you enlarge and enhance low-resolution images using advanced AI algorithms.
+Enlarge images without losing quality. It's almost like magic! 🎩🪄
 
-![884shots_so](https://user-images.githubusercontent.com/25067102/224690031-7b52b455-2d42-43f6-966a-3389cb61ae23.png)
+**https://upscayl.org**
 
-**Upscayl is a cross-platform application built with the Linux-first philosophy. This means that we prioritize Linux builds over others but that doesn't mean we'll break things for other OSes :)**
-
-### NOTE: You'll need a Vulkan compatible GPU to upscale images. Many CPU and iGPUs do not work but no harm in trying.
+<video src="https://github.com/upscayl/upscayl/assets/25067102/ad2453b1-3c5a-4eb2-b992-4cf10e6a49f5" autoplay muted loop />
 
 </div>
 
+# Contents
 
-# Installation 👨‍💻
+- [👨‍💻 Installation](#-installation)
+  - [🐧 Linux](#-linux)
+  - [🍎 macOS](#-macos)
+  - [🐌 Windows](#-windows)
+- [👨‍🏫 Documentation - Tutorials and Guides](#-documentation---tutorials-and-guides)
+- [⚖️ Demo Results (Before and After)](#%EF%B8%8F-results)
+- [🤫 Roadmap](#-roadmap)
+- [🛠 Developing Upscayl](#-development)
+- [🤓 FAQ](#-faq)
+- [🎁 Donate and support the project](#-donate)
+- [❤ Credits](#-credits)
 
-### Linux 🐧
-<a href="https://appimage.github.io/Upscayl/">
-<img src="https://user-images.githubusercontent.com/25067102/191270389-9de37c0f-39a8-41f1-a659-8dd4e7b8ac28.png" width="250px"/>
+# 👨‍💻 Installation
+
+> [!IMPORTANT]
+> You'll need a Vulkan compatible GPU (Graphics Card) to upscale images. Many iGPUs (integrated graphics) do not work but, no harm in trying :)
+
+## 🐧 Linux
+
+  <a href="https://flathub.org/apps/org.upscayl.Upscayl">
+    <img src="https://dl.flathub.org/assets/badges/flathub-badge-en.svg" height="50px"/>
+  </a>
+
+  <a href="https://appimage.github.io/Upscayl/">
+    <img src="https://user-images.githubusercontent.com/25067102/191270389-9de37c0f-39a8-41f1-a659-8dd4e7b8ac28.png" height="50px"/>
+  </a>
+
+  <a href="https://aur.archlinux.org/packages/upscayl-bin">
+    <img src="https://user-images.githubusercontent.com/25067102/191269445-87050a77-c304-4284-9ea0-699721309c59.png" height="50px"/>
+  </a>
+
+  <a href="https://snapcraft.io/upscayl/">
+    <img src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" height="50px"/>
+  </a>
+
+  <a href="https://github.com/MrPenguin07/ebuilds">
+    <img src="https://github.com/upscayl/upscayl/assets/25067102/322aebc5-91aa-4fc6-ac3a-d5a054449554" height="50px"/>
+  </a>
+
+Upscayl should be available on the software listings of most Linux operating systems. Your distro's Store app might also support the [Flatpak](https://flatpak.org/setup) or Snap version.
+
+### 💼 Portable Method
+
+1. Go to [releases section](https://github.com/upscayl/upscayl/releases/latest) or [our official website](https://upscayl.org/).
+2. Download the `upscayl-x.x.x-linux.AppImage` file.
+3. Right Click AppImage -> Go to Permissions tab -> Check 'allow file to execute' and then double click the file to run Upscayl.
+
+*You can also choose to install using other formats like RPM (Fedora), DEB (Debian/Ubuntu based), and ZIP (Any x86 Linux OS).*
+
+## 🍎 macOS
+(MacOS 12 and later)
+
+<a href="https://apps.apple.com/us/app/upscayl/id6468265473?mt=12">
+  <img src="https://www.upscayl.org/appstore.svg" height="60px"/>
 </a>
 
-<a href="https://aur.archlinux.org/packages/upscayl-bin">
-<img src="https://user-images.githubusercontent.com/25067102/191269445-87050a77-c304-4284-9ea0-699721309c59.png" width="250px"/>
-</a>
-
-1. Go to [releases section](https://github.com/TGS963/upscayl/releases/latest)
-
-2. Download the `.AppImage` file.
-
-3. Right Click AppImage -> Go to Permissions tab -> Check allow file to execute and then double click the file to run Upscayl.
-
-You can also download the flatpak version and double click the flatpak file to install via Store but wait for the full release, we'll be pushing it to Flathub for easy access.
-
-### MacOS 🍎
-
-1. Go to [releases section](https://github.com/TGS963/upscayl/releases/latest)
-
-2. Download the `.dmg` file.
-
+1. Go to [releases section](https://github.com/upscayl/upscayl/releases/latest) or [our official website](https://upscayl.org/).
+2. Download the `upscayl-x.x.x-mac.dmg` file.
 3. Double click dmg, drag Upscayl icon into Applications folder.
+4. Open Finder, click 'Applications' tab in the left sidebar. Find Upscayl and right click on it. Select 'Open'.
+5. In the window that appears, press 'Open' yet again.
 
-If you encounter an error with opening the application, try Ctrl+Clicking/Right-clicking the app and clicking open. In the popup that opens, also click open.
-### Windows 🐌
+### 🍺 Homebrew
 
-1. Go to [releases section](https://github.com/TGS963/upscayl/releases/latest)
+`brew install --cask upscayl`
 
-2. Download the `.exe` file.
+## 🐌 Windows
+(Windows 10 and later)
 
-3. Double click exe file, wait for installation, profit.
+1. Go to [releases section](https://github.com/upscayl/upscayl/releases/latest) or [our official website](https://upscayl.org/).
+2. Download the `upscayl-x.x.x-win.exe` file.
+3. Double click exe file to launch.
+4. If you get a SmartScreen warning - click 'More Info' and then 'Run Anyway' OR press 'YES' on the unverified publisher dialog.
+5. Follow the installation steps.
+6. Profit!
 
-# Comparisons: https://imgsli.com/MTQzMjI4/0/1
+# 👨‍🏫 Documentation - Tutorials and Guides
 
-#### Medium Resolution Images (300-400 pixels wide):
-![image](https://user-images.githubusercontent.com/25067102/187059440-83f32705-4509-4899-a109-ed2d8248fd2b.png)
-![image](https://user-images.githubusercontent.com/25067102/187059369-9bc63f1c-e6c0-4d6a-9089-706db43f171f.png)
-#### Low Resolution Images (150 pixels wide):
-![image](https://user-images.githubusercontent.com/25067102/187059318-2d01a671-53fe-4ecc-9a74-3a791fd55818.png)
-![image](https://user-images.githubusercontent.com/25067102/187059336-8d6e87ec-232f-4591-89c9-ff451692bcf2.png)
-#### Super Low Resolution Images (75 pixels wide):
-### UPSCALED TWICE
-![image](https://user-images.githubusercontent.com/25067102/187153200-8e184622-a791-43ad-8d73-e5580034f2f2.png)
+Check out our Documentation [here](https://docs.upscayl.org/).
 
+- [Try out even more new models!](https://github.com/upscayl/custom-models)
+- [Convert your own models](https://github.com/upscayl/upscayl/wiki/%F0%9F%96%A5%EF%B8%8F-Model-Conversion---Create-more-AI-models!)
+- [Compatibility List](https://github.com/upscayl/upscayl/wiki/Compatibility-List)
+- [Troubleshooting](https://github.com/upscayl/upscayl/wiki/Troubleshooting)
 
+# ⚖️ Results
 
-# Roadmap 🤫
+Check out Upscayl before/after comparisons [here](COMPARISONS.MD).
+
+# 🤫 Roadmap
 
 You can track all the progress here: https://github.com/orgs/upscayl/projects/1
 
-- Allow custom models
-- Logging
 - Fix bugs
 - Make the whole world use FOSS (WIP 🚧)
 
-# Development 🛠
+# 🛠 Development
 
-I recommend using Volta: https://volta.sh for using Node.js.
+I recommend using Volta: https://volta.sh for installing Node.js.
 Download and install volta, then do: `volta install node`.
 
-```bash
-# FOR EVERYONE
+## 🏃 Running
+> [!NOTE]
+> If you are not willing to install [git](https://git-scm.com/downloads), you can skip the first line, download [the source zip](https://github.com/upscayl/upscayl/archive/refs/heads/main.zip) and extract it to `upscayl` instead and carry on with the rest of the instructions.
+
+```sh
 git clone https://github.com/upscayl/upscayl
 cd upscayl
 
@@ -105,52 +154,60 @@ npm install
 
 # RUN THE DEVELOPMENT SERVER LOCALLY
 ## YOUR LOGS WILL NOW APPEAR IN THE TERMINAL
-npm run dev
+npm run start
+```
 
-# FOR DEVS
-## PACKAGE THE APP
+## 🏗️ Building
+
+```sh
+# INSTALL DEPENDENCIES
+npm install
+
+# PACKAGE THE APP
 npm run dist
 
-## PUBLISH THE APP, MAKE SURE TO ADD GH_TOKEN= IN SHELL
+# PUBLISH THE APP, MAKE SURE TO ADD GH_TOKEN= IN SHELL
+# ONLY DO THIS IF YOU'RE A MAINTAINER
 npm run publish-app
 ```
 
-# FAQ 🤓
+# 🤓 FAQ
 
-- How does Upscayl work?
-  - Upscayl uses AI models to enhance your images by guessing what the details could be. It uses Real-ESRGAN (and more in the future) model to achieve this.
-- Is there a CLI available?
-  - The CLI tool is called real-esrgan-ncnn-vulkan and it's available on the Real-ESRGAN repository.
-- Do I need a GPU for this to work?
-  - Yes, unfortunately. NCNN Vulkan requires a Vulkan compatible GPU. Upscayl won't work with **most** iGPUs or CPUs.
-- Why does batch upscaling output JPGs instead of PNGs?
-  - This is an issue with REAL-ERSGAN currently tracked [here](https://github.com/upscayl/upscayl/issues/174).
-- How can I contribute?
-  - You can fix code, add features by submitting PRs, report issues or donate :)
-- What's the GPU ID for?
-  - To find your GPU ID, you first need to launch Upscayl using the commandline and Upscayl an image. In the console output, you can see the GPUs that have been detected: ![image](https://user-images.githubusercontent.com/25067102/213901080-706071c2-4ad1-43cc-b5c6-70f46d0b547c.png)
-  As you can notice, 0 is the AMD iGPU, 1 is the Nvidia GPU, and 2 is the llvmpipe. If I set my GPU ID to 0, it'll always upscayl images with AMD iGPU (CPU) instead of dedicated GPU.
-- You are not fully open source!!😡
-  - We are, we're using completely free and open source tech. We do ship a binary but that's because not including it would kill the entire purpose of the project. If you want to deal with all those PyTorch, NCNN, and Python errors, you're more than welcome to compile your own binary using the code provided by Real-ESRGAN. The binary is pre-compiled for convenience, if you do not trust it, then you can compile your own since everything is free and open source here :)
+- **How does Upscayl work?**
+  - Upscayl uses AI models to enhance your images by guessing what the details could be. It uses Real-ESRGAN and Vulkan architecture to achieve this. [Our backend](https://github.com/upscayl/upscayl-ncnn) is fully open-source under the AGPLv3 license.
+- **I don't see a drastic change in my upscaled image. Why is that?**
+  - Upscayl can enhance low resolution images and images that are pixelated but it cannot de-blur or do focus adjustment on your image. If your image is out-of-focus or totally blurred, Upscayl is not the right tool for it. Please use images that are similar to the [examples we've given here.](COMPARISONS.MD)
+- **Is there a CLI available?**
+  - The CLI tool is called [upscayl-ncnn](https://github.com/upscayl/upscayl-ncnn).
+- **Do I need a GPU for this to work?**
+  - Yes, unfortunately. NCNN Vulkan requires a Vulkan-compatible GPU. Upscayl won't work with **most** iGPUs or CPUs. But hey, no harm in trying ;)
+    - @Wyrdgirn has contributed a workaround for Windows and Linux in [#390](https://github.com/upscayl/upscayl/issues/390)! Nobody knows how to manipulate the macOS and Haiku frameworks...
+- **I stopped the magic Batch Upscayl and my images haven't been processed, compressed, or are in the wrong scale!**
+  - When a model doesn't support an action, Upscayl will finish upscayling all the images first before post-processing them. What this means is that you should simply **wait** for the process to finish.
+- **How can I contribute?**
+  - You can report issues, fix code and add features by submitting PRs, or donate! 😊
+- **What's the GPU ID for?**
+  - It is for selecting which GPU to use. The specific procedure is detailed in the [Wiki](https://github.com/upscayl/upscayl/wiki/Guide).
+    - Note that for Windows systems, if Upscayl is not set to performance mode, the system may override this setting.
+- **Where do I find more models?**
+  -  More models can be taken from here: https://github.com/upscayl/custom-models
 
-Upscayl uses Real-ESRGAN-ncnn-vulkan binaries to upscale images. More models and algorithms will come soon.
-
-# Donate
+# 🎁 Donate
 
 <a href="https://www.buymeacoffee.com/fossisthefuture">
-<img src="https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png" />
+  <img src="https://user-images.githubusercontent.com/25067102/154570688-9e143f2b-fee3-4b05-a9d2-a7a3013b2b51.png" />
 <a/>
 
-# Credits ❤
+# ❤ Credits
 
-- Real-ESRGAN for their wonderful research work.\
+- Real-ESRGAN for their wonderful research work.
 [Real-ESRGAN: Copyright (c) 2021, Xintao Wang](https://github.com/xinntao/Real-ESRGAN/)
-
-- Microsoft™ for their Fluent Emoji used as our logo.
-- @JanDeDinoMan, @xanderfrangos, @Fdawgs, @keturn for their code contributions :)
+- @JanDeDinoMan, @xanderfrangos, @Fdawgs, @keturn for their code contributions
 - @aaronliu0130 for providing community support :)
-- Foolhardy for their [Remacri model](https://upscale.wiki/wiki/Model_Database).
-- [Kim2091](https://upscale.wiki/wiki/User:Kim2091)	for their [Ultrasharp and Ultramix Balanced model](https://upscale.wiki/wiki/Model_Database).
+- Helaman for their [HFA2k model](https://openmodeldb.info/models/4x-HFA2k) (included as "High Fidelity")
+- Foolhardy for their [Remacri model](https://openmodeldb.info/models/4x-Remacri).
+- [Kim2091](https://upscale.wiki/wiki/User:Kim2091)	for their [Ultrasharp and Ultramix Balanced model](https://openmodeldb.info/models/4x-UltraSharp).
+- @NicKoehler for their amazing logo :)
 #
 
 <div align="center">

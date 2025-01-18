@@ -6,6 +6,7 @@
 .pnp.js
 
 /main/*.js
+out/
 
 # testing
 /coverage
@@ -15,7 +16,9 @@
 /renderer/out/
 
 # production
-/dist
+/dist/
+/export/electron
+/export/common
 
 # misc
 .DS_Store
@@ -46,3 +49,9 @@ build-dir/
 
 main/*.js
 main/utils/*.js
+
+.env
+*.provisionprofile
+flags.ts
+*.p12
+dockerfile

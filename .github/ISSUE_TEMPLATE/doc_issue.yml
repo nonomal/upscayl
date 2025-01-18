@@ -1,5 +1,5 @@
 name: Documentation Issue
-description: Something wrong with the docs
+description: "Issues with the docs, release notes, website, etc. Do NOT use for bugs within Upscayl the program itself; instead, file a bug report."
 labels: documentation
 body:
 - type: checkboxes
@@ -13,15 +13,10 @@ body:
 - type: textarea
   attributes: 
     label: Describe the Issue
-    description: 💥 What? Where? How? is wrong? or lacking? Explain yourself!
+    description: 💥 What would you like to improve?
   validations:
     required: true
-- type: textarea
-  attributes:
-    label: Expected Behavior
-    description: 🤓 What should be there instead?
-  validations:
-    required: true
+
 - type: textarea
   attributes:
     label: Screenshots
